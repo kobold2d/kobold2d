@@ -1,0 +1,71 @@
+Kobold2D is the easiest 2D game engine for Objective-C programmers. Free & Open Source, MIT License. For iPhone, iPod touch, iPad and Mac OS X. 
+
+Kobold2D comes with cocos2d-iphone, cocos2d-iphone-extensions, cocos3d, Lua, Wax, Box2D, Chipmunk, Chipmunk SpaceManager, ObjectAL, SneakyInput, iSimulate and other libraries plus additional convenience classes (Game Center, Ads, Input, etc) packed together in a ready to use game development environment for Xcode 4. Kobold2D supports development with automatic reference counting (ARC) out of the box.
+
+For more information and to download the installer package please visit:
+http://www.kobold2d.com
+
+==========================================================
+READ THIS IMPORTANT NOTICE BEFORE PULLING THE SOURCE CODE!
+==========================================================
+
+Major differences of the Kobold2D github source code to the Kobold2D installer package:
+
+- Kobold2D Project Starter tool is unavailable
+	--> You can NOT start new projects without following the steps in /Kobold2D/README
+- Kobold2D Project Upgrader tool is unavailable
+- Offline HTML API documentation is unavailable
+- Offline Xcode API documentation is unavailable
+- Xcode File Templates (if any) will be unavailable
+- Kobold2D.xcworkspace contains ALL template projects by default
+- Xcode static library schemes will clutter up the scheme selection dropdown
+
+If these missing features come as a shock to you, then you very likely shouldn't pull the Kobold2D github repository. You are hereby STRONGLY URGED to download and install the Kobold2D installer package and forget about github, especially if you have no intention to commit back to the project. 
+
+You can download the Kobold2D installer package here: http://www.kobold2d.com/display/KKSITE/Kobold2D+Download
+
+---------
+REASONING
+---------
+
+----->
+Unless you plan to submit changes back to the Kobold2D project, collaborate in its development or help in beta-testing new code and tools, it is STRONGLY RECOMMENDED that you install the official installer version of Kobold2D! The Kobold2D installer version provides you with all the features marked as UNAVAILABLE above, and you can start creating new projects right away. The Kobold2D documentation also assumes you are using the installer version.
+
+Kobold2D was made to make your life easier. Don't make it harder for yourself by choosing to use it in a way that demands more from you and takes away convenience features. Before you proceed with pulling the Kobold2D source code, ask yourself how you would benefit from using the Kobold2D source code repository, and how important these benefits are compared to what you lose (convenience, tools, documentation).
+<-----
+
+-----------------
+WHEN NOT TO PULL:
+-----------------
+
+You should definitely NOT pull the source code if you haven't been working with Kobold2D before. Get acquainted with Kobold2D first by using the installer version.
+
+You should NOT pull the source code if you merely desire to be using the very latest code. The installer version always provides you with the latest code that's in the 'master' branch. The installer version also provides you with an upgrade tool that actually makes upgrading apps even easier than pulling new code from github.
+
+You should NOT pull the source code if your first and foremost goal is to create and release an app/game made with Kobold2D. Working from the source code repository will ultimately only serve to distract you from that goal if you're not an experienced git user.
+
+=========
+BRANCHES:
+=========
+
+The Kobold2D 'master' branch is always the same version as the latest installer version and updated whenever a new installer version is released, to avoid confusion and to deter interest from using github the github repository just for the sake of using github. You do not get "newer" code than the latest installer version by pulling the github 'master' version of Kobold2D.
+
+Pulling the 'develop' or other feature branches will provide you with the development code, but you should only do so if you urgently need to use or test the code features under development. The 'develop' and other branches may be unstable, untested and buggy. By switching branches from 'master' to 'develop' or any other it is assumed that you have read, understood and acknowledged the above notice.
+
+For what it's worth, Kobold2D will NEVER bother you with distinctions like "stable" and "unstable" releases, or alpha/beta versions for that matter. Each installer package respectively label has a version number, and that's it. Everything in the 'master' branch is considered stable code. 
+
+Code in any of the other branches is code that is in development, meaning it may or may not be tested, it may or may not be working, it may or may not be complete. Simply put: there are no guarantees, use at your own risk.
+
+============
+DEVELOPMENT:
+============
+
+For the time being, every now and then big updates are pushed to the 'develop' branch, rather than submitting individual changes. If the number of contributors grows, the granularity and frequency of updates may be increased as needed.
+
+Note that if you are actively helping the project you can become a dedicated Kobold2D developer by being invited to join the Kobold2D github "organization" as a team member. This will allow you to work directly in the develop branches with all the rights and responsibilities that this brings with it. 
+
+Ultimately, the project should take on a live of its own and every participating developer will be given freedom to improve Kobold2D based on his or her own interests. In stark contrast to the authoritarian development methodology and exclusionary design philosophy of cocos2d-iphone, Kobold2D will allow any feature to be added by anone, as long as it serves a wider audience of developers and/or makes the user's work easier without detrimental effects on the remaining developers who don't use that feature.
+
+For example, if there is a notable interest by Kobold2D developers to work with library X, it can and should be added if the library's license allows redistribution. However, if that library X would increase the size of resulting Kobold2D apps by a significant margin (decision depending on: size increase vs user interest), it would have to be added in such a way that it is disabled by default but can be enabled easily with one-line change to the source code (eg a kkUserConfig macro).
+
+Every contribution is welcome and will be given consideration in a timely manner!

@@ -1,0 +1,64 @@
+//
+// Kobold2D™ --- http://www.kobold2d.org
+//
+// Copyright (c) 2010-2011 Steffen Itterheim. 
+// Released under MIT License in Germany (LICENSE-Kobold2D.txt).
+//
+
+
+// Common Frameworks & Libraries
+KKFW_ZLib = -lz
+KKFW_AudioToolbox = -framework AudioToolbox
+KKFW_Foundation = -framework Foundation
+KKFW_OpenAL = -framework OpenAL
+KKFW_QuartzCore = -framework QuartzCore
+
+KKFW_COMMON = $(KKFW_ZLib) $(KKFW_Foundation) $(KKFW_AudioToolbox) $(KKFW_OpenAL) $(KKFW_QuartzCore)
+
+
+// iOS Frameworks
+KKFW_SysConfig = -framework SystemConfiguration
+KKFW_AVFoundation = -framework AVFoundation
+KKFW_CoreGraphics = -framework CoreGraphics
+KKFW_CoreLocation = -framework CoreLocation
+KKFW_MediaPlayer = -framework MediaPlayer
+KKFW_OpenGLES = -framework OpenGLES
+KKFW_CoreText = -framework CoreText
+
+FORCE_LOAD_COCOS2D = -force_load "$(BUILT_PRODUCTS_DIR)/libcocos2d-ios.a"
+// causes CCAsyncObject undefined symbol linker error when uncommented
+//FORCE_LOAD_COCOS2D_EXTENSIONS = -force_load "$(BUILT_PRODUCTS_DIR)/libcocos2d-extensions-ios.a"
+FORCE_LOAD_KOBOLD2D = -force_load "$(BUILT_PRODUCTS_DIR)/libkobold2d-ios.a"
+FORCE_LOAD_ISIMULATE = -force_load "$(KKLIBROOT)/iSimulateSDK/libisimulate-4.x-opengl.a"
+FORCE_LOAD_COCOS3D = -force_load "$(BUILT_PRODUCTS_DIR)/libcocos3d-ios.a"
+
+KKFW_IOS = $(KKFW_SysConfig) $(KKFW_AVFoundation) $(KKFW_CoreGraphics) $(KKFW_CoreLocation) $(KKFW_MediaPlayer) $(KKFW_OpenGLES) $(KKFW_CoreText) $(FORCE_LOAD_KOBOLD2D) $(FORCE_LOAD_COCOS2D) $(FORCE_LOAD_COCOS2D_EXTENSIONS)
+
+
+// iOS Weak Frameworks
+KKFW_CoreMotion = -weak_framework CoreMotion
+KKFW_GameKit = -weak_framework GameKit
+KKFW_iAd = -weak_framework iAd
+KKFW_MessageUI = -weak_framework MessageUI
+KKFW_StoreKit = -weak_framework StoreKit
+KKFW_UIKit = -weak_framework UIKit	// Weak linking to UIKit prevents crash on iOS < 3.2 due to UIGestureRecognizer
+KKFW_System = -weak-lSystem			// Weak linking to System prevents crash on iOS < 4.0 due to blocks
+
+KKFW_IOS_WEAK = $(KKFW_CoreMotion) $(KKFW_GameKit) $(KKFW_iAd) $(KKFW_MessageUI) $(KKFW_StoreKit) $(KKFW_UIKit) $(KKFW_System)
+
+
+// Mac Frameworks
+KKFW_AppKit = -framework AppKit
+KKFW_ApplicationServices = -framework ApplicationServices
+KKFW_Cocoa = -framework Cocoa
+KKFW_CoreAudio = -framework CoreAudio
+KKFW_CoreAudioKit = -framework CoreAudioKit 
+KKFW_OpenGL = -framework OpenGL
+KKFW_QTKit = -framework QTKit
+
+KKFW_MAC = $(KKFW_AppKit) $(KKFW_ApplicationServices) $(KKFW_Cocoa) $(KKFW_CoreAudio) $(KKFW_CoreAudioKit) $(KKFW_OpenGL) $(KKFW_QTKit)
+
+
+// all frameworks together
+KKFRAMEWORKS_IOS = $(KKFW_COMMON) $(KKFW_IOS) $(KKFW_IOS_WEAK) -lstdc++
+KKFRAMEWORKS_MAC = $(KKFW_COMMON) $(KKFW_MAC) -ObjC -lstdc++

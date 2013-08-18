@@ -1,0 +1,16 @@
+//
+// Kobold2D™ --- http://www.kobold2d.org
+//
+// Copyright (c) 2010-2011 Steffen Itterheim. 
+// Released under MIT License in Germany (LICENSE-Kobold2D.txt).
+//
+
+ARCHS = $(ARCHS_STANDARD_64_BIT)
+SDKROOT = macosx
+GCC_VERSION = com.apple.compilers.llvm.clang.1_0
+MACOSX_DEPLOYMENT_TARGET = 10.7
+
+// Warnings
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES
+
+GCC_PREFIX_HEADER = prefix/Prefix-Mac.pch

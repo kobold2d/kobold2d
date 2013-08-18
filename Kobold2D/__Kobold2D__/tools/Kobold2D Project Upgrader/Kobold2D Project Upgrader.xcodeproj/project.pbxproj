@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCB2C036140FD99900E12B9E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB2C035140FD99900E12B9E /* Cocoa.framework */; };
+		DCB2C040140FD99A00E12B9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCB2C03E140FD99A00E12B9E /* InfoPlist.strings */; };
+		DCB2C042140FD99A00E12B9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB2C041140FD99A00E12B9E /* main.m */; };
+		DCB2C046140FD99A00E12B9E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DCB2C044140FD99A00E12B9E /* Credits.rtf */; };
+		DCB2C049140FD99A00E12B9E /* Kobold2D_Project_UpgraderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB2C048140FD99A00E12B9E /* Kobold2D_Project_UpgraderAppDelegate.m */; };
+		DCB2C04C140FD99A00E12B9E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB2C04A140FD99A00E12B9E /* MainMenu.xib */; };
+		DCB2C055140FE70F00E12B9E /* ProjectsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB2C054140FE70F00E12B9E /* ProjectsDataSource.m */; };
+		DCF0CA851410DBB000A017B1 /* KoboldVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF0CA841410DBB000A017B1 /* KoboldVersion.m */; };
+		DCF0CA8C1410DBD100A017B1 /* XcodeProject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF0CA8B1410DBD100A017B1 /* XcodeProject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DCB2C031140FD99900E12B9E /* Kobold2D Project Upgrader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kobold2D Project Upgrader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB2C035140FD99900E12B9E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DCB2C038140FD99A00E12B9E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DCB2C039140FD99A00E12B9E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DCB2C03A140FD99A00E12B9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCB2C03D140FD99A00E12B9E /* Kobold2D Project Upgrader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kobold2D Project Upgrader-Info.plist"; sourceTree = "<group>"; };
+		DCB2C03F140FD99A00E12B9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCB2C041140FD99A00E12B9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCB2C043140FD99A00E12B9E /* Kobold2D Project Upgrader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kobold2D Project Upgrader-Prefix.pch"; sourceTree = "<group>"; };
+		DCB2C045140FD99A00E12B9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DCB2C047140FD99A00E12B9E /* Kobold2D_Project_UpgraderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kobold2D_Project_UpgraderAppDelegate.h; sourceTree = "<group>"; };
+		DCB2C048140FD99A00E12B9E /* Kobold2D_Project_UpgraderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kobold2D_Project_UpgraderAppDelegate.m; sourceTree = "<group>"; };
+		DCB2C04B140FD99A00E12B9E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DCB2C053140FE70F00E12B9E /* ProjectsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsDataSource.h; sourceTree = "<group>"; };
+		DCB2C054140FE70F00E12B9E /* ProjectsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsDataSource.m; sourceTree = "<group>"; };
+		DCF0CA831410DBB000A017B1 /* KoboldVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KoboldVersion.h; sourceTree = "<group>"; };
+		DCF0CA841410DBB000A017B1 /* KoboldVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KoboldVersion.m; sourceTree = "<group>"; };
+		DCF0CA8A1410DBD100A017B1 /* XcodeProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeProject.h; sourceTree = "<group>"; };
+		DCF0CA8B1410DBD100A017B1 /* XcodeProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeProject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCB2C02E140FD99900E12B9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB2C036140FD99900E12B9E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCB2C026140FD99900E12B9E = {
+			isa = PBXGroup;
+			children = (
+				DCB2C03B140FD99A00E12B9E /* Kobold2D Project Upgrader */,
+				DCB2C034140FD99900E12B9E /* Frameworks */,
+				DCB2C032140FD99900E12B9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCB2C032140FD99900E12B9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCB2C031140FD99900E12B9E /* Kobold2D Project Upgrader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCB2C034140FD99900E12B9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCB2C035140FD99900E12B9E /* Cocoa.framework */,
+				DCB2C037140FD99900E12B9E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCB2C037140FD99900E12B9E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCB2C038140FD99A00E12B9E /* AppKit.framework */,
+				DCB2C039140FD99A00E12B9E /* CoreData.framework */,
+				DCB2C03A140FD99A00E12B9E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DCB2C03B140FD99A00E12B9E /* Kobold2D Project Upgrader */ = {
+			isa = PBXGroup;
+			children = (
+				DCB2C047140FD99A00E12B9E /* Kobold2D_Project_UpgraderAppDelegate.h */,
+				DCB2C048140FD99A00E12B9E /* Kobold2D_Project_UpgraderAppDelegate.m */,
+				DCB2C04A140FD99A00E12B9E /* MainMenu.xib */,
+				DCB2C03C140FD99A00E12B9E /* Supporting Files */,
+				DCB2C053140FE70F00E12B9E /* ProjectsDataSource.h */,
+				DCB2C054140FE70F00E12B9E /* ProjectsDataSource.m */,
+				DCF0CA831410DBB000A017B1 /* KoboldVersion.h */,
+				DCF0CA841410DBB000A017B1 /* KoboldVersion.m */,
+				DCF0CA8A1410DBD100A017B1 /* XcodeProject.h */,
+				DCF0CA8B1410DBD100A017B1 /* XcodeProject.m */,
+			);
+			path = "Kobold2D Project Upgrader";
+			sourceTree = "<group>";
+		};
+		DCB2C03C140FD99A00E12B9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCB2C03D140FD99A00E12B9E /* Kobold2D Project Upgrader-Info.plist */,
+				DCB2C03E140FD99A00E12B9E /* InfoPlist.strings */,
+				DCB2C041140FD99A00E12B9E /* main.m */,
+				DCB2C043140FD99A00E12B9E /* Kobold2D Project Upgrader-Prefix.pch */,
+				DCB2C044140FD99A00E12B9E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCB2C030140FD99900E12B9E /* Kobold2D Project Upgrader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB2C04F140FD99A00E12B9E /* Build configuration list for PBXNativeTarget "Kobold2D Project Upgrader" */;
+			buildPhases = (
+				DCB2C02D140FD99900E12B9E /* Sources */,
+				DCB2C02E140FD99900E12B9E /* Frameworks */,
+				DCB2C02F140FD99900E12B9E /* Resources */,
+				DCB2C052140FD9B400E12B9E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kobold2D Project Upgrader";
+			productName = "Kobold2D Project Upgrader";
+			productReference = DCB2C031140FD99900E12B9E /* Kobold2D Project Upgrader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCB2C028140FD99900E12B9E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DCB2C02B140FD99900E12B9E /* Build configuration list for PBXProject "Kobold2D Project Upgrader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DCB2C026140FD99900E12B9E;
+			productRefGroup = DCB2C032140FD99900E12B9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCB2C030140FD99900E12B9E /* Kobold2D Project Upgrader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCB2C02F140FD99900E12B9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB2C040140FD99A00E12B9E /* InfoPlist.strings in Resources */,
+				DCB2C046140FD99A00E12B9E /* Credits.rtf in Resources */,
+				DCB2C04C140FD99A00E12B9E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DCB2C052140FD9B400E12B9E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(CONFIGURATION_BUILD_DIR)/$(TARGET_NAME).app",
+			);
+			outputPaths = (
+				"$(SRCROOT)/../../$(TARGET_NAME).app",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n# copies the .app to the Kobold2D root folder for end users\n\nsource=$CONFIGURATION_BUILD_DIR/$TARGET_NAME.app\ntarget=$PROJECT_DIR\n# remove substring to generate path to Kobold2D root folder\ntarget=${target%%/__Kobold2D__/tools/$TARGET_NAME}\n\necho Copy $TARGET_NAME.app to $target\nrm -d -R \"${target}/$TARGET_NAME.app\"\ncp -R \"${source}\" \"${target}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCB2C02D140FD99900E12B9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB2C042140FD99A00E12B9E /* main.m in Sources */,
+				DCB2C049140FD99A00E12B9E /* Kobold2D_Project_UpgraderAppDelegate.m in Sources */,
+				DCB2C055140FE70F00E12B9E /* ProjectsDataSource.m in Sources */,
+				DCF0CA851410DBB000A017B1 /* KoboldVersion.m in Sources */,
+				DCF0CA8C1410DBD100A017B1 /* XcodeProject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCB2C03E140FD99A00E12B9E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCB2C03F140FD99A00E12B9E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCB2C044140FD99A00E12B9E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCB2C045140FD99A00E12B9E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DCB2C04A140FD99A00E12B9E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCB2C04B140FD99A00E12B9E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCB2C04D140FD99A00E12B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DCB2C04E140FD99A00E12B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DCB2C050140FD99A00E12B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kobold2D Project Upgrader/Kobold2D Project Upgrader-Prefix.pch";
+				INFOPLIST_FILE = "Kobold2D Project Upgrader/Kobold2D Project Upgrader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCB2C051140FD99A00E12B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kobold2D Project Upgrader/Kobold2D Project Upgrader-Prefix.pch";
+				INFOPLIST_FILE = "Kobold2D Project Upgrader/Kobold2D Project Upgrader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCB2C02B140FD99900E12B9E /* Build configuration list for PBXProject "Kobold2D Project Upgrader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB2C04D140FD99A00E12B9E /* Debug */,
+				DCB2C04E140FD99A00E12B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB2C04F140FD99A00E12B9E /* Build configuration list for PBXNativeTarget "Kobold2D Project Upgrader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB2C050140FD99A00E12B9E /* Debug */,
+				DCB2C051140FD99A00E12B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCB2C028140FD99900E12B9E /* Project object */;
+}

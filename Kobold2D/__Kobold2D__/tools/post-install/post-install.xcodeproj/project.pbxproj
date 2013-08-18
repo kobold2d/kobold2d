@@ -1,0 +1,243 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC32EFFD1452F0D800FBDBEA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = DC32EFFC1452F0D800FBDBEA /* main.c */; };
+		DC32EFFF1452F0D800FBDBEA /* post_install.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC32EFFE1452F0D800FBDBEA /* post_install.1 */; };
+		DC32F00A1452F16100FBDBEA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32F0061452F16100FBDBEA /* Cocoa.framework */; };
+		DC32F00B1452F16100FBDBEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32F0071452F16100FBDBEA /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC32EFF31452F0D800FBDBEA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				DC32EFFF1452F0D800FBDBEA /* post_install.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DC32EFF51452F0D800FBDBEA /* post-install */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "post-install"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC32EFF91452F0D800FBDBEA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		DC32EFFC1452F0D800FBDBEA /* main.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = main.c; sourceTree = "<group>"; };
+		DC32EFFE1452F0D800FBDBEA /* post_install.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = post_install.1; sourceTree = "<group>"; };
+		DC32F0061452F16100FBDBEA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DC32F0071452F16100FBDBEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC32EFF21452F0D800FBDBEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC32F00A1452F16100FBDBEA /* Cocoa.framework in Frameworks */,
+				DC32F00B1452F16100FBDBEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC32EFEA1452F0D800FBDBEA = {
+			isa = PBXGroup;
+			children = (
+				DC32F0061452F16100FBDBEA /* Cocoa.framework */,
+				DC32F0071452F16100FBDBEA /* Foundation.framework */,
+				DC32EFFB1452F0D800FBDBEA /* post-install */,
+				DC32EFF81452F0D800FBDBEA /* Frameworks */,
+				DC32EFF61452F0D800FBDBEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC32EFF61452F0D800FBDBEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC32EFF51452F0D800FBDBEA /* post-install */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC32EFF81452F0D800FBDBEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC32EFF91452F0D800FBDBEA /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC32EFFB1452F0D800FBDBEA /* post-install */ = {
+			isa = PBXGroup;
+			children = (
+				DC32EFFC1452F0D800FBDBEA /* main.c */,
+				DC32EFFE1452F0D800FBDBEA /* post_install.1 */,
+			);
+			path = "post-install";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC32EFF41452F0D800FBDBEA /* post-install */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC32F0021452F0D800FBDBEA /* Build configuration list for PBXNativeTarget "post-install" */;
+			buildPhases = (
+				DC32EFF11452F0D800FBDBEA /* Sources */,
+				DC32EFF21452F0D800FBDBEA /* Frameworks */,
+				DC32EFF31452F0D800FBDBEA /* CopyFiles */,
+				DC32F00D1452F1C800FBDBEA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "post-install";
+			productName = "post-install";
+			productReference = DC32EFF51452F0D800FBDBEA /* post-install */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC32EFEC1452F0D800FBDBEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = DC32EFEF1452F0D800FBDBEA /* Build configuration list for PBXProject "post-install" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DC32EFEA1452F0D800FBDBEA;
+			productRefGroup = DC32EFF61452F0D800FBDBEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC32EFF41452F0D800FBDBEA /* post-install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DC32F00D1452F1C800FBDBEA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n# copies the .app to the Kobold2D root folder for end users\n\nsource=$CONFIGURATION_BUILD_DIR/$TARGET_NAME\ntarget=$PROJECT_DIR/$TARGET_NAME\n\necho Copy $TARGET_NAME.app to $target\nrm -d \"${target}/$TARGET_NAME\"\ncp \"${source}\" \"${target}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC32EFF11452F0D800FBDBEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC32EFFD1452F0D800FBDBEA /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DC32F0001452F0D800FBDBEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DC32F0011452F0D800FBDBEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DC32F0031452F0D800FBDBEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC32F0041452F0D800FBDBEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC32EFEF1452F0D800FBDBEA /* Build configuration list for PBXProject "post-install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC32F0001452F0D800FBDBEA /* Debug */,
+				DC32F0011452F0D800FBDBEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC32F0021452F0D800FBDBEA /* Build configuration list for PBXNativeTarget "post-install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC32F0031452F0D800FBDBEA /* Debug */,
+				DC32F0041452F0D800FBDBEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC32EFEC1452F0D800FBDBEA /* Project object */;
+}

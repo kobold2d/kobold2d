@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="dg_grounds32" tilewidth="32" tileheight="32">
+  <image source="dg_grounds32.png"/>
+ </tileset>
+ <tileset firstgid="172" name="game-events" tilewidth="32" tileheight="32">
+  <image source="game-events.png"/>
+  <tile id="0">
+   <properties>
+    <property name="isCloseToWater" value="1"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="isWater" value="1"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="isDesert" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Background" width="30" height="20">
+  <properties>
+   <property name="Chapter" value="10"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA42WzUrDQBSFZ+UiLttGJkurteDCZSCl6rgU6SPYhyhYfQNFLAi+hG/pDJxDT29mGhcf+Wvmy7mTO2nlnKsiS1CBTvZb2VeuIueRr8gn2ERmgL+7BwE8GKd17wq+nfF+wDmFd5q5R71BvJ3s23tas10a78Y4c1lt5lwe9bXi68z1mcE6c14yz9RT82kt2sxvSqhjLKh3npm7zu3n2+bOzXUp29j1vWn7Da/OK3Myq2YeynbMSW8d+RE3c9NVg6U5r8/nMdao4Cl5r8EJ0Jrneot4eEfCkLOGt4IzvYOpJy5wrN5ngfPpjY+wPvocel6975FLcWqtV8j0EvnFuYV4O6kzqQtondP4qe+ngFlPwQo5k/MN/rV47ftN99D8ss5E3+v0jGdwL+Bb43oTefyndwKsV/Oxfzy8Hixkn87Ek/GGjHviDt3qZX96GZPvRgMvj3ndH/Ha2lpv4gbsJEuDY/WM5Lx3/b4ayqre4Pq9QK93h+ukNz67hllvzqle5uW46khj37r+91nXUesNR3y8HnBv6g/2Sev2az29Cr32W61zW8qoJNc28ipsQfLcGehqjTOI0/ardab/OX+8e0WBYAkAAA==
+  </data>
+ </layer>
+ <layer name="WinterLayer" width="30" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA62TO2rDQBCGVaVQKwiozdOQAywo6AJuUtmRIyuFDXmsfZBUgUAukVtmFv6BP8O6yI6KD83OrvRpZqS6qqpa6EENOooDxXPwYJzW/XnivlP5/9JTfX1mP5hr7sycBML23ssi0zeuj3sRMmc83kVmdh3N29Y9x6y/4OWZBXJ21d+a5+Kb3Fq3us5Bb/L8fm2h9w6cAe557t9SWngbh/dGuBWusGbvM6HzbOFrHN4P4Zqc3Ot31DQIP8jdCxG+LeIS74VwCbTWR5C8OzgHsDPelXO+WusorIUXkNyTsAfJdRSWTu+aGEGEM4KJYnUuccbjZZ8+U7+ZI7y61v2D0/sGRqrlgDV7GspH+FYOb2NQb6Q+qIt9mi/1voJILo63xm8p9aZ7B4Kfp17G7pd6k2sjPBEbkDyTwTpLvb+eMC3TYAkAAA==
+  </data>
+ </layer>
+ <objectgroup name="ObjectLayer" width="30" height="20">
+  <object name="" x="283" y="317" width="103" height="71"/>
+  <object name="" x="-3" y="287" width="130" height="127"/>
+  <object name="" x="0" y="571" width="538" height="68"/>
+ </objectgroup>
+ <layer name="GameEventLayer" width="30" height="20" opacity="0.62">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3SQQqAQAgFUO9/lrEztikQc/SPaUT0wVXhw1GiP1/O9oDBoqTbaTNdXW52tWnNm/HHUTNjxUXsIQr1WPXIul5fz6tw5dxRKvYrXc+ovCu51zuu1TOqs0elq/+b3a23V8S1Zoms6JYQ1/rmvTGSzLyrBup25+3mDsKrXXpgCQAA
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,1 @@
+Demonstrates a scrolling isometric tilemap with correct z ordering on iOS & Mac OS. Includes a controllable player character and collision detection. Mac version shows how to respond to key events. Based on Learn Cocos2D chapter 11.

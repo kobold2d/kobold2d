@@ -1,0 +1,1 @@
+Illustrates how to mix Cocos2D with UIKit views. In particular gives you example code to add UIKit views both to the foreground and background, and performing hit testing so that background UIKit views can still process user input.

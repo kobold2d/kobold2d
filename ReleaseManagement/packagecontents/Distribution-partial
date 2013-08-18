@@ -1,0 +1,30 @@
+    <options customize="never" allow-external-scripts="no"/>
+    <domains enable_currentUserHome="true" />
+    <installation-check script="pm_install_check();"/>
+    <volume-check script="pm_volume_check();"/>
+    <script>function pm_volume_check() {
+  if(!(my.target.availableKilobytes >= 500 * 1024 * 1024)) {
+    my.result.title = 'Failure';
+    my.result.message = 'Not enough free disk space!';
+    my.result.type = 'Fatal';
+    return false;
+  }
+  return true;
+}
+
+
+function pm_install_check() {
+  if(!(/* >= */ system.compareVersions(system.version.ProductVersion, '10.6.0') >= 0)) {
+    my.result.title = 'Mac OS X Version Requirement not met';
+    my.result.message = 'Kobold2D requires Mac OS X Snow Leopard (10.6) or higher.';
+    my.result.type = 'Fatal';
+    return false;
+  }
+  return true;
+}
+</script>
+    <background file="background.jpg" alignment="topleft" scaling="none"/>
+    <welcome file="Welcome.rtfd"/>
+    <readme file="Readme.rtfd"/>
+    <license file="License"/>
+    <conclusion file="Conclusion.rtf"/>

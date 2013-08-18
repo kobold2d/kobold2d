@@ -1,0 +1,9 @@
+The libraries in this folder and thus all files in subfolders thereof
+are governed by their own Licenses. They are NOT governed by the
+Kobold2D™ MIT License but are compatible with the MIT License.
+
+Please refer to each library's respective LICENSE or COPYING or 
+Readme files to learn about licensing, copyright and trademark information.
+
+
+For libraries which do not specify a License file or licensing information, the respective author has granted Steffen Itterheim permission to include the library in commercial and free projects.

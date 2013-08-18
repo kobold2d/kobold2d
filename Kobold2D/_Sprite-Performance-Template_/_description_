@@ -1,0 +1,1 @@
+This template allows you to compare the worst-case (32-bit PNG, one draw call per sprite) with the best-case (PVR.CZZ Texture Atlas with Sprite Batching) sprite performance scenario. Also demonstrates the use of Sprite Batches and Texture Atlases. For iOS (Retina enabled) & Mac OS.

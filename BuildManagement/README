@@ -1,0 +1,5 @@
+BuildManagement
+
+Contains the build scripts used by Hudson. This allows all Kobold2D projects to be continuously built whenever changes are made. Currently, the CI machine is a Mac mini and not accessible to other users, nor will commits to github trigger Hudson.
+
+Given time and enough contributors, the CI machine will be improved to pull the code directly from github and the results will be made publicly available on the Kobold2D homepage. This would allow contributors to check within minutes after their commit to see if all projects still build. It would also allow other contributors to check the status of the current develop or other branches, to avoid pulling code that currently isn't building successfully.

@@ -1,0 +1,1 @@
+A tilemap demo for orthogonal tilemaps for iOS & Mac. Demonstrates how to access tiles, modify them, scroll the tilemap, determine touch location and other things. Based on the Learn Cocos2D book chapter 10.

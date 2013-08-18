@@ -1,0 +1,58 @@
+//
+// Kobold2D™ --- http://www.kobold2d.org
+//
+// Copyright (c) 2010-2011 Steffen Itterheim. 
+// Released under MIT License in Germany (LICENSE-Kobold2D.txt).
+//
+
+
+// If you have Xcode -> Preferences -> Locations -> Advanced set to
+// "Locations Specified by Targets" (Xcode 4.3: "Legacy) and you are required to use this setting,
+// then you must uncomment the following line (SYMROOT = ..) in order to build Kobold2D successfully!
+
+// The better solution is to reset this setting back to the Xcode recommended setting "Derived Data"
+// (Xcode 4.3: "Unique") if you can.
+// Please read the following page for more information and what negative side effects are associated
+// with the "Locations Specified by Targets" / "Legacy" setting: http://www.kobold2d.com/x/6QAi
+
+//SYMROOT = ~/Kobold2D/build
+
+
+
+CODE_SIGN_IDENTITY = 
+CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Developer
+
+PRODUCT_NAME = $(TARGET_NAME)
+
+LIBRARY_SEARCH_PATHS = $(inherited) "$(SRCROOT)/../__Kobold2D__/libs/iSimulateSDK"
+
+PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO
+GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+
+ALWAYS_SEARCH_USER_PATHS = NO
+GCC_SYMBOLS_PRIVATE_EXTERN = YES
+GCC_INLINES_ARE_PRIVATE_EXTERN = YES
+GCC_C_LANGUAGE_STANDARD = gnu99
+GCC_ENABLE_CPP_EXCEPTIONS = NO
+GCC_ENABLE_CPP_RTTI = NO
+GCC_FAST_MATH = YES	// relax IEEE compliance
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+
+// Link-time optimization MUST be disabled because it can lead to "object size unexpectedly large" errors
+LLVM_LTO = NO
+
+// Warnings
+GCC_WARN_ABOUT_RETURN_TYPE = YES
+GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES
+GCC_WARN_SIGN_COMPARE = YES
+GCC_WARN_STRICT_SELECTOR_MATCH = YES
+GCC_TREAT_WARNINGS_AS_ERRORS = YES
+GCC_WARN_UNDECLARED_SELECTOR = YES
+GCC_WARN_UNUSED_VARIABLE = YES
+CLANG_WARN_OBJCPP_ARC_ABI = YES
+//CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES
+
+// avoid "no packager exists for this type of archive" error
+// see: http://stackoverflow.com/questions/5271496/xcode4-ios-4-3-no-packager-exists-for-the-type-of-archive
+SKIP_INSTALL = YES

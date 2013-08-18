@@ -1,0 +1,7 @@
+
+<pkg-info format-version="2" identifier="com.kobold2d.kobold2d.postflight.pkg" version="1.0" install-location="/" auth="root">
+    <payload installKBytes="0" numberOfFiles="1"/>
+    <scripts>
+        <postinstall file="./postflight"/>
+    </scripts>
+</pkg-info>

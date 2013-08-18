@@ -1,0 +1,10 @@
+cocos2d-extensions
+==================
+
+This is a library containing only API enhancements for cocos2d-iphone.
+
+The project extends only existing Cocos2D classes via Objective-C categories. 
+This way we can easily patch in additional methods to the Cocos2D API without having to modify Cocos2D itself. 
+New classes not directly extending existing cocos2d classes should be added to the Kobold2D™ project instead.
+
+Note: this project is NOT the official cocos2d-iphone-extensions project.

@@ -1,0 +1,13 @@
+//
+// Kobold2D™ --- http://www.kobold2d.org
+//
+// Copyright (c) 2010-2011 Steffen Itterheim. 
+// Released under MIT License in Germany (LICENSE-Kobold2D.txt).
+//
+
+#include "Common-All.xcconfig"
+
+VALIDATE_PRODUCT = YES
+
+OTHER_CFLAGS = -DNS_BLOCK_ASSERTIONS=1
+GCC_PREPROCESSOR_DEFINITIONS = NDEBUG RELEASE NO_LOG_MACROS

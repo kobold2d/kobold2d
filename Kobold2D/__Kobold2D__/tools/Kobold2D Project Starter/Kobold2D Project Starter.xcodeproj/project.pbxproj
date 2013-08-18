@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC55E84013B2ACDC00903FE9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC55E83F13B2ACDC00903FE9 /* Cocoa.framework */; };
+		DC55E84A13B2ACDC00903FE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC55E84813B2ACDC00903FE9 /* InfoPlist.strings */; };
+		DC55E84D13B2ACDC00903FE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC55E84C13B2ACDC00903FE9 /* main.m */; };
+		DC55E85013B2ACDC00903FE9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DC55E84E13B2ACDC00903FE9 /* Credits.rtf */; };
+		DC55E85313B2ACDC00903FE9 /* Kobold2D_Project_StarterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC55E85213B2ACDC00903FE9 /* Kobold2D_Project_StarterAppDelegate.m */; };
+		DC55E85613B2ACDC00903FE9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC55E85413B2ACDC00903FE9 /* MainMenu.xib */; };
+		DCC47B8F13B51E58003C687D /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC47B8E13B51E58003C687D /* MainWindowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC55E83B13B2ACDC00903FE9 /* Kobold2D Project Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kobold2D Project Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC55E83F13B2ACDC00903FE9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DC55E84213B2ACDC00903FE9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DC55E84313B2ACDC00903FE9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DC55E84413B2ACDC00903FE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DC55E84713B2ACDC00903FE9 /* Kobold2D Project Starter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kobold2D Project Starter-Info.plist"; sourceTree = "<group>"; };
+		DC55E84913B2ACDC00903FE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC55E84B13B2ACDC00903FE9 /* Kobold2D Project Starter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kobold2D Project Starter-Prefix.pch"; sourceTree = "<group>"; };
+		DC55E84C13B2ACDC00903FE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC55E84F13B2ACDC00903FE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DC55E85113B2ACDC00903FE9 /* Kobold2D_Project_StarterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kobold2D_Project_StarterAppDelegate.h; sourceTree = "<group>"; };
+		DC55E85213B2ACDC00903FE9 /* Kobold2D_Project_StarterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kobold2D_Project_StarterAppDelegate.m; sourceTree = "<group>"; };
+		DC55E85513B2ACDC00903FE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DC5FDE9C13FE83D1009CED18 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		DCC47B8D13B51E58003C687D /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		DCC47B8E13B51E58003C687D /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC55E83813B2ACDC00903FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC55E84013B2ACDC00903FE9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC55E83013B2ACDC00903FE9 = {
+			isa = PBXGroup;
+			children = (
+				DC55E84513B2ACDC00903FE9 /* Kobold2D Project Starter */,
+				DC55E83E13B2ACDC00903FE9 /* Frameworks */,
+				DC55E83C13B2ACDC00903FE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC55E83C13B2ACDC00903FE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC55E83B13B2ACDC00903FE9 /* Kobold2D Project Starter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC55E83E13B2ACDC00903FE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC55E83F13B2ACDC00903FE9 /* Cocoa.framework */,
+				DC55E84113B2ACDC00903FE9 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC55E84113B2ACDC00903FE9 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC55E84213B2ACDC00903FE9 /* AppKit.framework */,
+				DC55E84313B2ACDC00903FE9 /* CoreData.framework */,
+				DC55E84413B2ACDC00903FE9 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DC55E84513B2ACDC00903FE9 /* Kobold2D Project Starter */ = {
+			isa = PBXGroup;
+			children = (
+				DC5FDE9C13FE83D1009CED18 /* Constants.h */,
+				DC55E85113B2ACDC00903FE9 /* Kobold2D_Project_StarterAppDelegate.h */,
+				DC55E85213B2ACDC00903FE9 /* Kobold2D_Project_StarterAppDelegate.m */,
+				DC55E85413B2ACDC00903FE9 /* MainMenu.xib */,
+				DCC47B8D13B51E58003C687D /* MainWindowController.h */,
+				DCC47B8E13B51E58003C687D /* MainWindowController.m */,
+				DC55E84613B2ACDC00903FE9 /* Supporting Files */,
+			);
+			path = "Kobold2D Project Starter";
+			sourceTree = "<group>";
+		};
+		DC55E84613B2ACDC00903FE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC55E84713B2ACDC00903FE9 /* Kobold2D Project Starter-Info.plist */,
+				DC55E84813B2ACDC00903FE9 /* InfoPlist.strings */,
+				DC55E84B13B2ACDC00903FE9 /* Kobold2D Project Starter-Prefix.pch */,
+				DC55E84C13B2ACDC00903FE9 /* main.m */,
+				DC55E84E13B2ACDC00903FE9 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC55E83A13B2ACDC00903FE9 /* Kobold2D Project Starter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC55E85913B2ACDC00903FE9 /* Build configuration list for PBXNativeTarget "Kobold2D Project Starter" */;
+			buildPhases = (
+				DC55E83713B2ACDC00903FE9 /* Sources */,
+				DC55E83813B2ACDC00903FE9 /* Frameworks */,
+				DC55E83913B2ACDC00903FE9 /* Resources */,
+				DC187D4713F17FAA00F61A8B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kobold2D Project Starter";
+			productName = "Kobold2D Project Starter";
+			productReference = DC55E83B13B2ACDC00903FE9 /* Kobold2D Project Starter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC55E83213B2ACDC00903FE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = DC55E83513B2ACDC00903FE9 /* Build configuration list for PBXProject "Kobold2D Project Starter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DC55E83013B2ACDC00903FE9;
+			productRefGroup = DC55E83C13B2ACDC00903FE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC55E83A13B2ACDC00903FE9 /* Kobold2D Project Starter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC55E83913B2ACDC00903FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC55E84A13B2ACDC00903FE9 /* InfoPlist.strings in Resources */,
+				DC55E85013B2ACDC00903FE9 /* Credits.rtf in Resources */,
+				DC55E85613B2ACDC00903FE9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DC187D4713F17FAA00F61A8B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(CONFIGURATION_BUILD_DIR)/$(TARGET_NAME).app",
+			);
+			outputPaths = (
+				"$(SRCROOT)/../../$(TARGET_NAME).app",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n# copies the .app to the Kobold2D root folder for end users\n\nsource=$CONFIGURATION_BUILD_DIR/$TARGET_NAME.app\ntarget=$PROJECT_DIR\n# remove substring to generate path to Kobold2D root folder\ntarget=${target%%/__Kobold2D__/tools/$TARGET_NAME}\n\necho Copy $TARGET_NAME.app to $target\nrm -d -R \"${target}/$TARGET_NAME.app\"\ncp -R \"${source}\" \"${target}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC55E83713B2ACDC00903FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC55E84D13B2ACDC00903FE9 /* main.m in Sources */,
+				DC55E85313B2ACDC00903FE9 /* Kobold2D_Project_StarterAppDelegate.m in Sources */,
+				DCC47B8F13B51E58003C687D /* MainWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC55E84813B2ACDC00903FE9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC55E84913B2ACDC00903FE9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DC55E84E13B2ACDC00903FE9 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC55E84F13B2ACDC00903FE9 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DC55E85413B2ACDC00903FE9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC55E85513B2ACDC00903FE9 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC55E85713B2ACDC00903FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"PRODUCT_NAME=$PRODUCT_NAME",
+					DEBUG,
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DC55E85813B2ACDC00903FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "PRODUCT_NAME=$PRODUCT_NAME";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DC55E85A13B2ACDC00903FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kobold2D Project Starter/Kobold2D Project Starter-Prefix.pch";
+				INFOPLIST_FILE = "Kobold2D Project Starter/Kobold2D Project Starter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DC55E85B13B2ACDC00903FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kobold2D Project Starter/Kobold2D Project Starter-Prefix.pch";
+				INFOPLIST_FILE = "Kobold2D Project Starter/Kobold2D Project Starter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC55E83513B2ACDC00903FE9 /* Build configuration list for PBXProject "Kobold2D Project Starter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC55E85713B2ACDC00903FE9 /* Debug */,
+				DC55E85813B2ACDC00903FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC55E85913B2ACDC00903FE9 /* Build configuration list for PBXNativeTarget "Kobold2D Project Starter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC55E85A13B2ACDC00903FE9 /* Debug */,
+				DC55E85B13B2ACDC00903FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC55E83213B2ACDC00903FE9 /* Project object */;
+}

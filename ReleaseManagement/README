@@ -1,0 +1,10 @@
+ReleaseManagement
+
+Files and tools that assist in creating the Kobold2D installer package.
+
+kkprep is a command line tool that copies, cleans and prepares the Kobold2D folder for installation. It also creates the doxygen documentation and runs the packagemaker tool. The result is a Kobold2D.pkg file placed in the folder ../Kobold2D_Packages/Kobold2D-<version> which can be installed.
+
+The packagecontents folder contains the resources that will be bundled with the installer package. Most notably you'll find the .rtf files used as the installer descriptions with images, and the postflight script.
+
+
+Note: this is a set of tools and resources that "just works". It was never intended to be a good example of anything. About the only thing that could be improved is to allow users to choose a custom install location (but not allowing to choose any other drive than the system drive) from the installer. 

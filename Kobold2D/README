@@ -1,0 +1,32 @@
+Kobold2D README for the version pulled from Github
+
+
+===> If you want to start a new Kobold2D project <===
+
+- copy all _XXXX-Template_ folders to ./__Kobold2D__/templates/project/
+- open the ./__Kobold2D__/tools/Kobold2D Project Starter/Kobold2D Project Starter.xcodeproj
+- build & run the Kobold2D Project Starter project
+- Kobold2D Project Starter tool GUI: create a new .xcworkspace (enter a name other than Kobold2D.xcworkspace)
+	- This will avoid having to load the Kobold2D.xcworkspace which contains ALL template projects.
+
+IMPORTANT: do not modify any of the files in one of the projects named _XXXX-Template_.xcodeproj unless you plan to commit your improvements / bugfixes back to the Kobold2D project. Do not start a work project without creating a new project via the Kobold2D Project Starter tool. Because eventually you will want to start a new project based on that same template. And pulling the latest code may merge undesirable changes into any _XXX-Template_ project, possibly rendering it inoperable if you also made changes to that project.
+
+IMPORTANT for contributors: do not remove projects from the Kobold2D.xcworkspace. This would make integration of your changes harder. Instead, work in a custom .xcworkspace. If you are creating a new template project, simply add that project to the Kobold2D.xcworkspace once and then work from the custom .xcworkspace to reduce memory load.
+
+Only add projects to the Kobold2D.xcworkspace that are properly named using the same format as the other templates: _XXX-YYY-ZZZ-Template_ whereas XXX-YYY-ZZZ can be anything but without any special characters (including: !#$+_) and all spaces replaced by - (dashes). The same name must be used for the project's folder, the project's .xcodeproj file, the name of the project within Xcode Project Navigator (first item in the tree view) and all targets of the project.
+
+
+===> Upgrading to a newer Kobold2D version <===
+
+Your project should reside in a custom .xcworkspace, as the Kobold2D.xcworkspace may be updated and references to your project may be removed. If this happens, you can always add your .xcodeproj back in, it won't be deleted. But adding a .xcodeproj correctly to a .xcworkspace is a bit finicky because you have to drop it on the far left side of the Project Navigator pane, otherwise it will be added to another .xcodeproj instead of the .xcodeworkspace, rendering the project inoperable untill you re-add it correctly.
+
+Then just synch the latest version from github.
+
+However, if this causes your project to stop working and you want to go back to a previous version, it will be easier to do so with the Project Upgrader tool provided by the Kobold2D installer version if you're not sufficiently experienced with github to rollback to a previous version.
+
+
+===> Take care of what you're committing <===
+
+Some bash scripts and your work may create files that should not be pushed back to the Kobold2D repository, due to filesize, security concerns or merely avoiding to add clutter. Take care what you submit, if necessary update the .gitignore file accordingly.
+
+For example, running the documentation script may create several hundred megabytes worth of HTML and docset files. If you accidentally commit these, your github repository will likely consume more memory than free accounts are allowed to contain (limit as of Nov 2011: 0.3 GB). The commit may be successful since github uses soft limits, but you may get a message from github suggesting to upgrade to a commercial plan.

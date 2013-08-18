@@ -1,0 +1,7 @@
+The tileset images in this folder were drawn by David E. Gervais.
+
+They are published under the Creative Commons License: 
+http://creativecommons.org/licenses/by/3.0/
+
+You can download more of David's tilesets here:
+http://pousse.rapiere.free.fr/tome/index.htm

@@ -1,0 +1,38 @@
+__Kobold2D__
+
+This is the base folder for all Kobold2D internal items.
+
+
+=== Folder Description ===
+
+/buildsettings
+	Contains most of the Kobold2D .xcconfig files that assist in managing the Xcode Build Settings. Instead of manually making changes in the Build Settings GUI for each project, global changes can be made much more easily in one of the .xcconfig files.
+	Note that each project contains additional .xcconfig files containing settings which can only be defined on a project level. Whenever possible, you should modify the project-level .xcconfig files rather than the Kobold2D files, unless you know what you're doing.
+	
+
+/docs
+	Contains the doxygen .config files for generating both the HTML and Xcode .docset documentation. Several bash scripts assist in creating the documentation files and installing the Xcode docsets. Note that if you run these scripts, they may create several hundreds of megabytes of files which you don't want to commit back to github!
+
+
+/kobold2d
+	Contains all of the Kobold2D source code for new features and glue code. The subfolder cocos2d-ext contains extension classes (mostly categories) that add new methods to cocos2d-iphone classes. It should not be confused with the cocos2d-iphone-extensions project.
+	Any new code should be added to the kobold2d folder and added to the Kobold2D target. If the contribution is either substantial or useful only to some developers or imposing requirements to all developers, creating an additional static library should be considered instead.
+	Any code that extends or improves the cocos2d-iphone classes should be added to the cocos2d-ext folder, unless the changes require you to modify the cocos2d-iphone code directly. In almost all cases modifying cocos2d-iphone is not necessary, most changes can be implemented as an extension.
+	Either way: please seek consultation BEFORE adding new code, so that we can find the right way and place to add the code and modifications of existing code.
+	
+	General rule: Kobold2D's primary goal is to extend cocos2d-iphone, not to modify it. Exceptions notwithstanding, but those exceptions should be limited in order to allow new cocos2d-iphone versions to be integrated easily and quickly.
+
+
+/libs
+	All 3rd party libraries and code. Some changes need to be made for compatibility reasons, mostly limited to fix issues with ARC, the latest compiler version, or Mac OS builds.
+	If you want to add a new static library, this is where you should add the library code.
+
+
+/templates
+	Contains (or will contain) File, Project and Workspace templates.
+	The /project folder will be empty or not existing when using the github version. The installer package places the _XXXX-Template_ projects here, and the Kobold2D Project Starter tool will allow users to select one of these projects as project template.
+	The /workspace folder contains some files the Kobold2D Project Starter tool uses to construct a new .xcodeworkspace file.
+
+
+/tools
+	Contains the projects of various GUI and command line tools provided by Kobold2D. Most of them are not examples of good code but rather "code that does the job". And that job is a rather limited set of requirements that were easily satisfied. Also, good excuse for covering up the fact that the Project Starter Tool was the very first Cocoa (touch) app that I've created. Well, I learned a lot and yeah it DOES work … much to my surprise. :)

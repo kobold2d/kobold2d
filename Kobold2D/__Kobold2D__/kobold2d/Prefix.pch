@@ -1,0 +1,19 @@
+/*
+ * Kobold2Dª --- http://www.kobold2d.org
+ *
+ * Copyright (c) 2010-2011 Steffen Itterheim. 
+ * Released under MIT License in Germany (LICENSE-Kobold2D.txt).
+ */
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+
+#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#else // Mac OS X
+	#import <Cocoa/Cocoa.h>
+#endif
+
+#endif // ___OBJC___

@@ -1,0 +1,239 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC612B2D13FE762000B1A603 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = DC612B2C13FE762000B1A603 /* main.c */; };
+		DC612B2F13FE762000B1A603 /* kkprep.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC612B2E13FE762000B1A603 /* kkprep.1 */; };
+		DC612BA813FE7A0F00B1A603 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC612BA713FE7A0F00B1A603 /* Foundation.framework */; };
+		DC612BAA13FE7AFA00B1A603 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC612BA913FE7AFA00B1A603 /* Cocoa.framework */; };
+		DCC0F5AE143251EA00544EE9 /* kobold2d_version.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC0F5AD143251EA00544EE9 /* kobold2d_version.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC612B2613FE762000B1A603 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				DC612B2F13FE762000B1A603 /* kkprep.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DC612B2813FE762000B1A603 /* kkprep */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kkprep; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC612B2C13FE762000B1A603 /* main.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = main.c; sourceTree = "<group>"; };
+		DC612B2E13FE762000B1A603 /* kkprep.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = kkprep.1; sourceTree = "<group>"; };
+		DC612BA713FE7A0F00B1A603 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DC612BA913FE7AFA00B1A603 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DCC0F5AC143251EA00544EE9 /* kobold2d_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kobold2d_version.h; path = ../../../Kobold2D/__Kobold2D__/kobold2d/kobold2d_version.h; sourceTree = "<group>"; };
+		DCC0F5AD143251EA00544EE9 /* kobold2d_version.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = kobold2d_version.m; path = ../../../Kobold2D/__Kobold2D__/kobold2d/kobold2d_version.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC612B2513FE762000B1A603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC612BAA13FE7AFA00B1A603 /* Cocoa.framework in Frameworks */,
+				DC612BA813FE7A0F00B1A603 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC612B1D13FE762000B1A603 = {
+			isa = PBXGroup;
+			children = (
+				DC612BA913FE7AFA00B1A603 /* Cocoa.framework */,
+				DC612BA713FE7A0F00B1A603 /* Foundation.framework */,
+				DC612B2B13FE762000B1A603 /* kkprep */,
+				DC612B2913FE762000B1A603 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC612B2913FE762000B1A603 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC612B2813FE762000B1A603 /* kkprep */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC612B2B13FE762000B1A603 /* kkprep */ = {
+			isa = PBXGroup;
+			children = (
+				DCC0F5AC143251EA00544EE9 /* kobold2d_version.h */,
+				DCC0F5AD143251EA00544EE9 /* kobold2d_version.m */,
+				DC612B2C13FE762000B1A603 /* main.c */,
+				DC612B2E13FE762000B1A603 /* kkprep.1 */,
+			);
+			path = kkprep;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC612B2713FE762000B1A603 /* kkprep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC612B3213FE762000B1A603 /* Build configuration list for PBXNativeTarget "kkprep" */;
+			buildPhases = (
+				DC612B2413FE762000B1A603 /* Sources */,
+				DC612B2513FE762000B1A603 /* Frameworks */,
+				DC612B2613FE762000B1A603 /* CopyFiles */,
+				DCCF43BD1456C7C800EEF24E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kkprep;
+			productName = kkprep;
+			productReference = DC612B2813FE762000B1A603 /* kkprep */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC612B1F13FE762000B1A603 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DC612B2213FE762000B1A603 /* Build configuration list for PBXProject "kkprep" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DC612B1D13FE762000B1A603;
+			productRefGroup = DC612B2913FE762000B1A603 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC612B2713FE762000B1A603 /* kkprep */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DCCF43BD1456C7C800EEF24E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n# copies the .app to the Kobold2D root folder for end users\n\nsource=$CONFIGURATION_BUILD_DIR/$TARGET_NAME\ntarget=/depot-kobold2d/Kobold2D-Master/$TARGET_NAME\n\necho Copy $TARGET_NAME.app to $target\nrm -d \"${target}\"\ncp \"${source}\" \"${target}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC612B2413FE762000B1A603 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC612B2D13FE762000B1A603 /* main.c in Sources */,
+				DCC0F5AE143251EA00544EE9 /* kobold2d_version.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DC612B3013FE762000B1A603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../../Kobold2D/__Kobold2D__/kobold2d/ \"$(SOURCE_ROOT)/../../Kobold2D/__Kobold2D__/tools/Kobold2D Project Starter/Kobold2D Project Starter\" $(SOURCE_ROOT)/../../Kobold2D/__Kobold2D__/kobold2d/cocos2d-ext";
+			};
+			name = Debug;
+		};
+		DC612B3113FE762000B1A603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../../Kobold2D/__Kobold2D__/kobold2d/ \"$(SOURCE_ROOT)/../../Kobold2D/__Kobold2D__/tools/Kobold2D Project Starter/Kobold2D Project Starter\" $(SOURCE_ROOT)/../../Kobold2D/__Kobold2D__/kobold2d/cocos2d-ext";
+			};
+			name = Release;
+		};
+		DC612B3313FE762000B1A603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC612B3413FE762000B1A603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC612B2213FE762000B1A603 /* Build configuration list for PBXProject "kkprep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC612B3013FE762000B1A603 /* Debug */,
+				DC612B3113FE762000B1A603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC612B3213FE762000B1A603 /* Build configuration list for PBXNativeTarget "kkprep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC612B3313FE762000B1A603 /* Debug */,
+				DC612B3413FE762000B1A603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC612B1F13FE762000B1A603 /* Project object */;
+}

@@ -1,0 +1,40 @@
+//
+// Kobold2D™ --- http://www.kobold2d.org
+//
+// Copyright (c) 2010-2011 Steffen Itterheim. 
+// Released under MIT License in Germany (LICENSE-Kobold2D.txt).
+//
+
+// Provide path to all folders with header files that are in use
+// Why so verbose? Because using recursive paths /** together with /../ breaks code sense :(
+// See: http://stackoverflow.com/questions/5288697/code-loses-syntax-color-in-xcode-4
+
+KKROOT = "$(SOURCE_ROOT)"/../__Kobold2D__
+KKLIBROOT = $(KKROOT)/libs
+
+KOBOLD2D = $(KKROOT)/kobold2d $(KKROOT)/koboldscript/nodes $(KKROOT)/kobold2d/cocos2d-ext
+KKSCRIPTROOT = $(KKROOT)/koboldscript
+KKSCRIPT = $(KKSCRIPTROOT) $(KKSCRIPTROOT)/actions $(KKSCRIPTROOT)/conditions $(KKSCRIPTROOT)/statemachine $(KKSCRIPTROOT)/variables $(KKSCRIPTROOT)/wrapper $(KKSCRIPTROOT)/scriptnodes $(KKSCRIPTROOT)/nodeabilities $(KKSCRIPTROOT)/nodebehaviors
+KAZMATH = $(KKLIBROOT)/cocos2d-iphone/external/kazmath/include
+COCOS2D = $(KKLIBROOT)/cocos2d-iphone/cocos2d
+COCOS2D_REST = $(COCOS2D)/Platforms $(COCOS2D)/Platforms/iOS $(COCOS2D)/Platforms/Mac $(COCOS2D)/Support
+CCEXTROOT = $(KKLIBROOT)/cocos2d-iphone-extensions/Extensions
+COCOS2D_EXTENSIONS = $CCEXTROOT/CCBigImage $CCEXTROOT/CCLayerPanZoom $CCEXTROOT/CCMenuAdvanced $CCEXTROOT/CCMenuItemSpriteIndependent $CCEXTROOT/CCScrollLayer $CCEXTROOT/CCSendMessages $CCEXTROOT/CCSlider $CCEXTROOT/CCVideoPlayer $CCEXTROOT/CCVideoPlayer/iOS $CCEXTROOT/CCVideoPlayer/Mac $CCEXTROOT/FilesDownloader $CCEXTROOT/TMXGenerator
+COCOSDENSHION = $(KKLIBROOT)/cocos2d-iphone/CocosDenshion
+BOX2DROOT = $(KKLIBROOT)/Box2D
+BOX2D = $(BOX2DROOT) $(BOX2DROOT)/Box2D $(BOX2DROOT)/Box2D/Rope $(BOX2DROOT)/Box2D/Collision $(BOX2DROOT)/Box2D/Collision/Shapes $(BOX2DROOT)/Box2D/Common $(BOX2DROOT)/Box2D/Dynamics $(BOX2DROOT)/Box2D/Dynamics/Contacts $(BOX2DROOT)/Box2D/Dynamics/Joints
+CHIPMUNK = $(KKLIBROOT)/Chipmunk/include/chipmunk
+CHIPSPACEROOT = $(KKLIBROOT)/Chipmunk-SpaceManager
+CHIPSPACE = $(CHIPSPACEROOT)/src $(CHIPSPACEROOT)/src/cpSpaceSerializer $(CHIPSPACEROOT)/src/ccExtras $(CHIPSPACEROOT)/src/cpExtras $(CHIPSPACEROOT)/src/PhysicsEditorExtras
+SNEAKYINPUT = $(KKLIBROOT)/SneakyInput/Classes $(KKROOT)/kobold2d/sneaky-ext
+VTPG = $(KKLIBROOT)/VTPG
+LUA = $(KKLIBROOT)/Lua/src
+OBJECTALROOT = $(KKLIBROOT)/ObjectAL-for-iPhone/ObjectAL/ObjectAL
+OBJECTAL = $(OBJECTALROOT) $(OBJECTALROOT)/Actions $(OBJECTALROOT)/AudioTrack $(OBJECTALROOT)/OpenAL $(OBJECTALROOT)/Session $(OBJECTALROOT)/Support
+CC3ROOT = $(KKLIBROOT)/cocos3d/cocos3d
+COCOS3D = $(CC3ROOT)/cc3Extras $(CC3ROOT)/cc3PVR $(CC3ROOT)/CCNodeController $(CC3ROOT)/cocos3d $(CC3ROOT)/cocos3d/OpenGLES11 $(CC3ROOT)/cocos3d/Utility "$(CC3ROOT)/cc3PVR/PVRT 2.08" "$(CC3ROOT)/cc3PVR/PVRT 2.08/OGLES"
+BITARRAY = $(KKLIBROOT)/bitarray_c
+
+HEADER_SEARCH_PATHS = $(inherited) $(BOX2D)
+
+USER_HEADER_SEARCH_PATHS = $(inherited) $(KOBOLD2D) $(KKSCRIPT) $(CHIPSPACE) $(COCOS2D) $(COCOS2D_REST) $COCOS2D_EXTENSIONS $(COCOS3D) $(COCOSDENSHION) $(CHIPMUNK) $(OBJECTAL) $(VTPG) $(LUA) $(SNEAKYINPUT) $(BITARRAY) $(KAZMATH)

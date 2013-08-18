@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+RESULT=`"$2/KoboldTouch/___KOBOLD2D-VERSION___/__KoboldTouch__/tools/post-install/post-install/post-install" "$2/KoboldTouch/___KOBOLD2D-VERSION___"`
+RESULT=`"$2/KoboldTouch/___KOBOLD2D-VERSION___/__KoboldTouch__/docs/install-all-docsets.sh" "$2/KoboldTouch/___KOBOLD2D-VERSION___/__KoboldTouch__/docs/"`
+RESULT=`/usr/bin/open 'http://www.kobold2d.com/display/KKDOC/Kobold2D+Release+Notes'`
+RESULT=`/usr/bin/open "$2/KoboldTouch"/___KOBOLD2D-VERSION___/'KoboldTouch Project Starter.app'`
+
+#RESULT=`/usr/bin/osascript -e 'tell application "Finder" to reveal application file id "com.kobold2d.Kobold2D-Project-Starter"'`
+
+exit 0
