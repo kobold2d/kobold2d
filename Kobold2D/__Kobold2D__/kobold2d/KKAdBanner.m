@@ -371,7 +371,7 @@ static NSString* kiAdClassName = @"ADBannerView";
 	KKAppDelegate* appDelegate = (KKAppDelegate*)[UIApplication sharedApplication].delegate;
 	if (appDelegate.config.adMobTestMode)
 	{
-		request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, [[UIDevice currentDevice] uniqueIdentifier], nil];
+		request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, @"<this is not really a unique identifier>", nil];
 	}
 	
     return request;

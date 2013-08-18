@@ -9,7 +9,7 @@
 #import "ccMoreMacros.h"
 
 /** this string is output to log on startup and used by the kkprep tool that creates the installer package */
-static NSString* version = @"Kobold2D™ v2.1.0";
+static NSString* version = @"Kobold2D™ v2.1.1";
 
 /** Returns the Kobold2D Version string. */
 NSString* kobold2dVersion()
